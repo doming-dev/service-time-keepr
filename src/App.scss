@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@200;300;400;500&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+$darkGray: #4b6584;
+$dodgerBlue: #ffffff;
+$stopwatchBackground: rgb(18, 63, 94);
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    background-color: $darkGray;
+    color:white;
+    font-family: "Roboto Condensed";
+}
+
+.App{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.keepr{
+    font-family: "Dancing Script";
+    margin-left:10px;
+    font-size: 1.8rem;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Raleway";
+    font-size: 1.5rem;
+}
+
+
+.clock-img{
+    height: 50px;
+}
+
+
+.month-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.month-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.month{
+    font-size: 1.8rem;
+    z-index: 1;
+}
+
+.go-back-month{
+    z-index: 0;
+    margin-top: -5px;
+    font-size: .9rem;
+    color: rgb(101, 219, 255);
+    text-decoration: underline;
+}
+
+.btn-navigate{
+    height: 60px;
+}
+
+
+.stop-watch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    align-items: center;
+    border: 1px solid $stopwatchBackground;
+    background-color: $stopwatchBackground;
+    border-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.timer{
+    background-color: $stopwatchBackground;
+}
+
+
+.digits{
+    background-color: $stopwatchBackground;
+    font-size: 2.5rem;
+}
+
+.mili-sec{
+    color: rgb(219, 99, 18);
+}
+
+.control-buttons{
+    background-color: $stopwatchBackground;
+}
+
+.active-btn-container{
+    display: flex;
+    flex-direction: column;
+    background-color: $stopwatchBackground;
+}
+
+.btn-start{
+    background-color: #1fa85f;
+}
+
+.btn-save{
+    margin:3px;
+    background-color: #1fa85f;
+}
+
+.btn-reset{
+    margin:3px;
+    background-color: rgb(224, 96, 22);
+}
+
+.btn-pause-resume{
+    margin:3px;
+    background-color: #202e53;
+}
+
+.btn{
+    text-align: center;
+    line-height: 30px;
+    height: 40px;
+    width: 90px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+
+}
+
+
+.record{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(191, 196, 192);
+    border-radius: 10px;;
+    margin-top:10px;
+}
+
+.record-date-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.record-date{
+    font-size: 1.1rem;
+}
+
+.record-day{
+    font-size: 1.3rem;
+    color:rgb(59, 223, 141);
+}
+
+.record-time-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.record-time{
+    font-size: 1.2rem;
+}
+
+.record-mili{
+    color: orange;
+    font-size: 1.2rem;
+}
+
+
+.btn-delete{
+    background-color: rgb(238, 42, 42);
+    width: 80px;
+    height: 30px;
+    line-height: 20px;
+}
