@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@200;300;400;500&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #4b6584;
+  color: white;
+  font-family: "Roboto Condensed";
+}
+
+.App {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.keepr {
+  font-family: "Dancing Script";
+  margin-left: 10px;
+  font-size: 1.8rem;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  font-family: "Raleway";
+  font-size: 1.5rem;
+}
+
+.clock-img {
+  height: 50px;
+}
+
+.month-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.month-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.month {
+  font-size: 1.8rem;
+  z-index: 1;
+}
+
+.go-back-month {
+  z-index: 0;
+  margin-top: -5px;
+  font-size: .9rem;
+  color: #65dbff;
+  text-decoration: underline;
+}
+
+.btn-navigate {
+  height: 60px;
+}
+
+.stop-watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  align-items: center;
+  border: 1px solid #123f5e;
+  background-color: #123f5e;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.timer {
+  background-color: #123f5e;
+}
+
+.digits {
+  background-color: #123f5e;
+  font-size: 2.5rem;
+}
+
+.mili-sec {
+  color: #db6312;
+}
+
+.control-buttons {
+  background-color: #123f5e;
+}
+
+.active-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #123f5e;
+}
+
+.btn-start {
+  background-color: #1fa85f;
+}
+
+.btn-save {
+  margin: 3px;
+  background-color: #1fa85f;
+}
+
+.btn-reset {
+  margin: 3px;
+  background-color: #e06016;
+}
+
+.btn-pause-resume {
+  margin: 3px;
+  background-color: #202e53;
+}
+
+.btn {
+  text-align: center;
+  line-height: 30px;
+  height: 40px;
+  width: 90px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+
+.record {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid #bfc4c0;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.record-date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.record-date {
+  font-size: 1.1rem;
+}
+
+.record-day {
+  font-size: 1.3rem;
+  color: #00ff80;
+}
+
+.record-time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+
+.record-time {
+  font-size: 1.2rem;
+}
+
+.record-mili {
+  color: orange;
+  font-size: 1.2rem;
+}
+
+.btn-delete {
+  background-color: #ee2a2a;
+  width: 80px;
+  height: 30px;
+  line-height: 20px;
+}
+/*# sourceMappingURL=App.css.map */
